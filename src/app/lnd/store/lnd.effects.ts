@@ -89,11 +89,7 @@ export class LNDEffects implements OnDestroy {
         takeUntil(this.actions.pipe(ofType(RTLActions.SET_SELECTED_NODE))),
         map((info) => {
           this.logger.info(info);
-          if (info.chains && info.chains.length && info.chains[0] && (
-            (typeof info.chains[0] === 'string' && info.chains[0].toLowerCase().indexOf('bitcoin') < 0) ||
-            (typeof info.chains[0] === 'object' && info.chains[0].hasOwnProperty('chain') && info.chains[0].chain.toLowerCase().indexOf('bitcoin') < 0)
-          )
-          ) {
+          if (false) {
             this.store.dispatch(updateLNDAPICallStatus({ payload: { action: 'FetchInfo', status: APICallStatusEnum.COMPLETED } }));
             this.store.dispatch(closeAllDialogs()); // Multiple UI_MESSAGES.GET_NODE_INFO after unlock & UI_MESSAGES.WAIT_SYNC_NODE
             this.store.dispatch(openAlert({
