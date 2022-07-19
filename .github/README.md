@@ -1,5 +1,7 @@
 ## PREAMBLE
-A fork of Ride the Lightning with the "Bitcoin only" checks disabled.  Toxic Bitcoin maximalism is a serious desease among some developers; this fork attempts to aleviate some of the community pain caused by the infected.  Please use the branches suffixed with "-qp" and follow the usual installation instructions.  Conflicting dependencies may be worked around with "npm install --force --only=prod"
+A fork of Ride the Lightning with the "Bitcoin Only" checks disabled.
+
+Toxic Bitcoin maximalism is a serious disease among some developers; this fork attempts to aleviate some of the wider cryptocurrency community pain caused by the infected.  Please use the branches suffixed with "-qp" and follow the usual installation instructions.  Conflicting dependencies may be worked around with "npm install --force --only=prod"
 
 ## Ride The Lightning (RTL)
 ![](./screenshots/RTL-LND-Dashboard.png)
